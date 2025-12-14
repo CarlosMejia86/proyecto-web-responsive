@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Web Responsive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+  <!-- HEADER -->
+  <header class="bg-success text-white text-center py-4">
+    <h1 class="fw-bold">Proyecto Web</h1>
+    <p class="mb-0">Carlos Mejía & Jonathan Marín</p>
+  </header>
+
+  <!-- MENÚ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#somos">Somos</a>
+        <a class="nav-link" href="#productos">Productos</a>
+        <a class="nav-link" href="#contacto">Contáctanos</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="container my-4">
+
+    <!-- SOMOS -->
+    <section id="somos" class="mb-5">
+      <h2 class="text-success mb-3">Somos</h2>
+
+      <div class="row text-center">
+        <div class="col-md-6 mb-3">
+          <div class="card shadow-sm">
+            <img src="img/carlos.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Carlos Mejía</h5>
+              <p class="card-text">Desarrollador</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="card shadow-sm">
+            <img src="img/jonathan.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Jonathan Marín</h5>
+              <p class="card-text">Desarrollador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="mb-5">
+      <h2 class="text-success mb-3">Productos</h2>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5>Producto 1</h5>
+              <p>Descripción</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5>Producto 2</h5>
+              <p>Descripción</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <h5>Producto 3</h5>
+              <p>Descripción</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO (FORMULARIO) -->
+    <section id="contacto" class="mb-5">
+      <h2 class="text-success mb-3">Contáctanos</h2>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+
+          <form action="mailto:carlosmejia721@hotmail.com" method="post" enctype="multipart/form-data">
+
+            <!-- IDENTIDAD -->
+            <fieldset class="mb-4">
+              <legend class="fw-bold text-success">Identidad</legend>
+
+              <div class="mb-3">
+                <label class="form-label">Subir foto</label>
+                <input type="file" class="form-control">
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Nombres</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Apellidos</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <label class="form-label">Tipo documento</label>
+                  <select class="form-select">
+                    <option>CC</option>
+                    <option>TI</option>
+                    <option>PAS</option>
+                  </select>
+                </div>
+                <div class="col-md-8 mb-3">
+                  <label class="form-label">Número documento</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- ACCESO -->
+            <fieldset class="mb-4">
+              <legend class="fw-bold text-success">Acceso</legend>
+
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control mb-3">
+
+              <label class="form-label">Contraseña</label>
+              <input type="password" class="form-control">
+            </fieldset>
+
+            <!-- BOTONES -->
+            <div class="d-grid gap-2">
+              <button class="btn btn-success">Enviar</button>
+              <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 - Proyecto académico
+  </footer>
+
+</body>
+</html>
